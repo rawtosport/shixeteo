@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+	
+	<title> BEVERLY CLUB </title>
+
+</head>
+<body>
+	<ul>
+	    <li> Список товаров: </li>
+	{% for post in list %}
+	    <li>{{post.title}}</li>
+	{% endfor %}
+	</ul>
+
+	
+
+</body>
+</html>
